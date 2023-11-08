@@ -3,11 +3,7 @@
 
 if __name__ == "__main__":
     a = [int(input("Enter number: ")) for i in range(10)]
-    b = []
-
-    for num in a:
-        if num % 11 == 0 and num > 0:
-            b.append(num)
+    b = [i for i in a if i % 11 == 0 and i > 0]
 
     diff = b[0]
     for num in b[1:]:
