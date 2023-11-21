@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 if __name__ == "__main__":
-    lst = [float(input("Enter elemnt of list: ")) for i in range(10)]
+    lst = list(map(float, input().split()))
     c = float(input("Enter C: "))
 
     # 1 задача: количество элементов списка, больших С;
