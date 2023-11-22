@@ -9,9 +9,9 @@ if __name__ == "__main__":
     print(f"Count of elements greater than {c}: {len([i for i in lst if (i > c)])}")
 
     # 2 задача: произведение элементов списка, расположенных после максимального по модулю элемента.
-    maxElemIndex = lst.index(max(lst))
+    max_elem_index = lst.index(max(lst))
     product = 1
-    for elem in lst[maxElemIndex + 1 :]:
+    for elem in lst[max_elem_index + 1 :]:
         product *= elem
     print(f"Product: {product}")
 
