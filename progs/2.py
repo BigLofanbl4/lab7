@@ -6,11 +6,7 @@ if __name__ == "__main__":
     c = float(input("Enter C: "))
 
     # 1 задача: количество элементов списка, больших С;
-    count = 0
-    for elem in lst:
-        if elem > c:
-            count += 1
-    print(f"Count of elements greater than {c}: {count}")
+    print(f"Count of elements greater than {c}: {len([i for i in lst if (i > c)])}")
 
     # 2 задача: произведение элементов списка, расположенных после максимального по модулю элемента.
     maxElemIndex = lst.index(max(lst))
